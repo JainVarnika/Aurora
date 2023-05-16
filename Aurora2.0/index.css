@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+body{
+    background-color: #120715;
+
+}
+.heading1 h1{
+    position: absolute;
+    top: 20px;
+    left:90px;
+    background: linear-gradient(to right,#c060a1,#f1d4d4,#6a097d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'georama';
+    font-size: 60px;
+}
+.heading1 p{
+    position: absolute;
+    left:90px;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: #f1d4d4;
+    top: 130px;
+}
+.heading2 p{
+    position: absolute;
+    font-size: 55px;
+    color: white;
+    left: 90px;
+    top: 300px;
+    margin-top: 50px;
+    /* margin-left: 90px; */
+    font-family: 'Montserrat';
+}
+.heading2 p span{
+    position: relative;
+    margin:5px 0;
+    line-height: 90px;
+    /* animation: slide infinite;*/ 
+}
+ @keyframes slide{
+    100%{
+        top: 60px;
+    }
+}
+.heading2 p span::after{
+    content: "";
+    position: absolute;
+    /* background: #120715; */
+    width: 60%;
+    height: 100%;
+    left: 0;
+    /* border-left: 5px solid #120715; */
+    animation: typing 4s steps(10) infinite;
+
+}
+@keyframes typing{
+    40% , 60%{
+        left: calc(100% +30 px);
+    }
+    100%{
+        left: 0;
+    }
+}
+.heading2 .button{
+    display: flex;
+}
+.heading2 .b1{
+
+    margin-left: 90px;
+    margin-top: -280px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    background: #6a097d;
+    color: #fff;
+    height: 55px;
+    width: 200px;
+    text-align: center;
+    border:#f1d4d4;
+    cursor:pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+.b1:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid #f1d4d4;
+    border-right: 2px solid #f1d4d4;
+    animation: border-top-right 3s infinite alternate;
+}
+.b1::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid #f1d4d4;
+    border-left: 2px solid #f1d4d4;
+    animation: border-bottom-left 3s infinite alternate;
+}
+@keyframes border-top-right{
+    0%{width: 0px;height: 0px;}
+    25%{width: 200px;height: 0px;}
+    50%{width: 200px;height: 55px;}
+    100%{width: 200px;height: 55px;}
+}
+@keyframes border-bottom-left{
+    0%{width: 0px;height: 0px;opacity: 0;}
+    50%{width: 0px;height: 0px;opacity: 0;}
+    50.1%{width: 0px;height: 0px;opacity: 1;}
+    75%{width:200px;height: 0px;opacity: 1;}
+    100%{width: 200px;height: 50px;opacity: 1;}
+}
+
+
+.b2:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid #6a097d;
+    border-right: 2px solid #6a097d;
+    animation: border-top-right 3s infinite alternate;
+}
+.b2::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid #6a097d;
+    border-left: 2px solid #6a097d;
+    animation: border-bottom-left 3s infinite alternate;
+}
+@keyframes border-top-right{
+    0%{width: 0px;height: 0px;}
+    25%{width: 200px;height: 0px;}
+    50%{width: 200px;height: 55px;}
+    100%{width: 200px;height: 55px;}
+}
+@keyframes border-bottom-left{
+    0%{width: 0px;height: 0px;opacity: 0;}
+    50%{width: 0px;height: 0px;opacity: 0;}
+    50.1%{width: 0px;height: 0px;opacity: 1;}
+    75%{width:200px;height: 0px;opacity: 1;}
+    100%{width: 200px;height: 50px;opacity: 1;}
+}
+
+.heading2 .b2{
+    
+    margin-left: 350px;
+    margin-top: -280px;
+    font-family: 'Montserrat';
+    text-align: center;
+    border:#f1d4d4;
+    cursor:pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background: #;  
+    border-style: solid #080409;
+    height: 55px;
+    color: #fff;
+    width: 200px;
+    
+    text-align: center;
+}
+#image-track > .image{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: relative;
+    left: 50%;
+    /* top: 80%; */
+    margin-top: 10%;
+    transform: translate(0%,-50%);
+}
+
+.gallery p {
+    font-size: 50px;
+    font-family: 'Montserrat';
+    color: #fff;
+    position: relative;
+    top: -140px;
+    margin: 0;
+    text-align: center;
+
+}
+.tracker{
+    overflow: hidden;
+    margin: 0;
+}
+.bg{
+    background-color: #f1d4d4;
+    height: 480px;
+}
+.planets{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.pl .box {
+    position: relative;
+    top: 40%;
+    display: inline;
+    object-fit: cover;
+    transition: 1s;
+    gap:20px
+}
+.img:hover{
+    transition: 1s;
+    transform: scale(4s);
+}
+.solar{
+    font-size: 50px;
+    text-align: center;
+    color:#fff;
+    position: relative;
+    top: 170px;
+    font-family: 'Montserrat';
+}
