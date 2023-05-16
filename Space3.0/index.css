@@ -1,0 +1,21 @@
+body{
+    background-color: #120715;
+
+}
+.planets{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.pl .box {
+    position: relative;
+    top: 40%;
+    display: inline;
+    object-fit: cover;
+    transition: 1s;
+    gap:20px
+}
+.img:hover{
+    transition: 1s;
+    transform: scale(4s);
+}
